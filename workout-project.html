@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout-Rob</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        background-image: linear-gradient(
+          -225deg,
+          #69eacb 0%,
+          #eaccf8 48%,
+          #6654f1 100%
+        );
+      }
+      .theme-button {
+        display: block;
+        color: white;
+        background-color: rgb(122, 229, 209);
+        font-size: 13px;
+        font-weight: bold;
+        border: 3px solid rgb(235, 235, 242);
+        border-radius: 50px;
+        cursor: pointer;
+        margin: 10px auto;
+        padding: 15px 15px;
+        text-transform: uppercase;
+      }
+      .theme-button:hover {
+        background: #bea5f6;
+        color: black;
+      }
+      .text {
+        color: rgb(13, 13, 13);
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      .container {
+        background: aliceblue;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: [sidebar] 1fr [content] 2fr;
+        gap: 20px;
+      }
+
+      .grid img {
+        width: 100%;
+        border: 4px solid rgb(155, 152, 156);
+        border-radius: 15px;
+        transition: all 500ms ease-in-out;
+      }
+
+      .main-picture:hover {
+        transform: scale(1.8) rotate(900deg);
+        filter: hue-rotate(90deg);
+      }
+
+      a {
+        font-weight: bold;
+        color: rgb(222, 21, 198);
+      }
+      p {
+        font-size: 12px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .text-link {
+        font-size: 12px;
+      }
+
+      .workout-button {
+        display: block;
+        font-size: 12px;
+        margin: 10px auto;
+        padding: 13px 13px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        background: #7878f1;
+        color: white;
+        font-weight: bold;
+        border: 3px solid rgb(235, 235, 242);
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+
+      .workout-button:hover {
+        background: #6fe9cd;
+      }
+      footer {
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .dark {
+        background: black;
+        color: white;
+      }
+      .dark h1 {
+        color: white;
+      }
+      .dark h2 {
+        color: white;
+      }
+      .dark .container {
+        background: #272626;
+      }
+      .dark a {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <div class="text">
+        <h1>Workout🏋️‍♀️</h1>
+        <h2>A really good and healthy robby.</h2>
+      </div>
+      <div class="grid">
+        <img
+          src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="main-picture"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1562771242-a02d9090c90c?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1520&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="main-picture"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1597076545399-91a3ff0e71b3?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1623200216581-969d9479cf7d?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="main-picture"
+        />
+      </div>
+      <p>
+        Being physically active can improve your brain health, help manage
+        weight, reduce the risk of disease, strengthen bones and muscles, and
+        improve your ability to do everyday activities. Adults who sit less and
+        do any amount of moderate-to-vigorous physical activity gain some health
+        benefits. Exercise is defined as any movement that makes your muscles
+        work and requires your body to burn calories. There are many types of
+        physical activity, including swimming, running, jogging, walking, and
+        dancing, to name a few. Being active has been shown to have many health
+        benefits, both physically and mentally. It may even help you live
+        longer.
+      </p>
+
+      <small>
+        <div class="text-link">
+          Read more about
+          <a href="https://en.wikipedia.org/wiki/Exercise" target="_blank"
+            >Exercises.</a
+          >
+        </div>
+        <br />
+        <br />
+        <button id="workout-button" class="workout-button">
+          Let's go workout
+        </button>
+      </small>
+
+      <footer>
+        Coded by
+        <a href="https://www.instagram.com/dri_cividini/" target="_blank"
+          >👩‍💻Adriana Cividini</a
+        >
+        with HTML, CSS and JavaScript.
+      </footer>
+    </div>
+    <script>
+      function workout() {
+        let name = prompt("What is your name?");
+
+        alert("Thank you " + name + "! I'll be in touch soon!");
+      }
+
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      let button = document.querySelector("#workout-button");
+      button.addEventListener("click", workout);
+    </script>
+  </body>
+</html>
